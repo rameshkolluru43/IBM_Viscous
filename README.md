@@ -1,4 +1,4 @@
-# Shrinaths Immersed Boundary Project
+# IBM_Viscous — Shrinaths Immersed Boundary Project
 
 ## Overview
 This project implements numerical solvers for **2D compressible flow** using the **Immersed Boundary Method (IBM)** on structured grids. The default build solves the **laminar Navier–Stokes equations** (MOVERS-N inviscid flux + Newtonian viscous terms) with **no-slip, adiabatic IBM walls**. An **inviscid Euler + slip-wall** mode is available for legacy runs. **MPI** domain decomposition and optional **OpenMP** / **WENO-5** are supported.
