@@ -1,0 +1,36 @@
+# Build
+*.o
+*.obj
+*.so
+*.a
+*.dylib
+MOVERSNEulerSolverMPI
+MOVERSNEulerSolverIBM
+MOVERSNEulerSolverIBM_*
+LocatorV4.1
+convert_to_vtk
+Geometries/MOVERSNEulerSolver
+*.rar
+
+# Solver outputs (regenerate with locator/solver; too large for git)
+*.vtk
+*.log
+output/
+MPI_Parallel_Solver/*.dat
+MPI_Parallel_Solver/Residues*.dat
+Geometries/*.dat
+!MPI_Parallel_Solver/cases/**/*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Metal build artifacts (if built standalone)
+*.air
+*.metallib
